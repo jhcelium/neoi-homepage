@@ -26,13 +26,23 @@
     "@type": "Organization",
     "name": "Neoi",
     "legalName": "NEO INSPIRE KABUSHIKI KAISHA",
-    "logo": "https://www.neoi.jp/images/neoi-logo.png"
+    "url": "https://www.neoi.jp/",
+    "logo": "https://www.neoi.jp/images/neoi-logo.png",
+    "sameAs": [
+      "https://beauty.neoi.jp/",
+      "https://supplement.neoi.jp/en",
+      "https://instagram.com/neoi.supplement",
+      "https://x.com/neoi_supplement",
+      "https://youtube.com/@neoi_supplement"
+    ]
   },
   "blogPost": [
     {
       "@type": "BlogPosting",
       "headline": "How to use organic essential oils at home: a beginner's guide",
       "url": "https://www.neoi.jp/news-essential-oils-beginners-guide.html",
+      "image": "https://www.neoi.jp/images/banner-aroma-beauty.webp",
+      "description": "A simple, safe beginner's guide to using organic essential oils at home — diffusing, dilution ratios, reed diffusers and everyday rituals.",
       "datePublished": "2026-06-01",
       "author": {"@type":"Organization","name":"Neoi"}
     },
@@ -40,6 +50,8 @@
       "@type": "BlogPosting",
       "headline": "Caring for handcrafted Japanese makeup brushes",
       "url": "https://www.neoi.jp/news-caring-for-makeup-brushes.html",
+      "image": "https://www.neoi.jp/images/banner-makeup-brushes.webp",
+      "description": "How to wash, dry and store handcrafted Japanese makeup brushes so the natural bristles last for years.",
       "datePublished": "2026-05-20",
       "author": {"@type":"Organization","name":"Neoi"}
     },
@@ -47,9 +59,22 @@
       "@type": "BlogPosting",
       "headline": "Understanding NMN, placenta and royal jelly: what the labels mean",
       "url": "https://www.neoi.jp/news-nmn-placenta-royal-jelly-explained.html",
+      "image": "https://www.neoi.jp/images/banner-supplements.webp",
+      "description": "A plain-English explainer of three premium supplement ingredients — NMN, placenta extract and royal jelly — and what the label figures mean.",
       "datePublished": "2026-05-08",
       "author": {"@type":"Organization","name":"Neoi"}
     }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.neoi.jp/" },
+    { "@type": "ListItem", "position": 2, "name": "News", "item": "https://www.neoi.jp/news.html" }
   ]
 }
 </script>
@@ -78,11 +103,12 @@
   @media(max-width:880px){.grid{grid-template-columns:1fr}}
   .post{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
   .post:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(60,50,40,.12)}
-  .post .thumb{aspect-ratio:16/10;background-size:cover;background-position:center}
+  .post .thumb{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
   .post .body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
   .post .cat{font-family:system-ui,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
   .post h2{font-size:20px;font-weight:600;line-height:1.35}
-  .post .date{font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:auto}
+  .post .excerpt{font-family:system-ui,sans-serif;font-size:14px;color:var(--muted);line-height:1.6}
+  .post .date{display:block;font-family:system-ui,sans-serif;font-size:13px;color:var(--muted);margin-top:auto}
   footer{padding:48px 24px;text-align:center;font-family:system-ui,sans-serif;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:20px}
   footer .links{margin-bottom:14px;display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
   footer a:hover{color:var(--ink)}
@@ -125,29 +151,32 @@
     <div class="grid">
 
       <a class="post" href="news-essential-oils-beginners-guide.html">
-        <div class="thumb" style="background-image:url('images/banner-aroma-beauty.webp')"></div>
+        <img class="thumb" src="images/banner-aroma-beauty.webp" alt="Neoi organic essential oils, MOMO reed diffuser and Japanese hand care arranged on a sunlit desk" width="2000" height="1000" loading="eager" />
         <div class="body">
           <span class="cat">Aromatherapy</span>
           <h2>How to use organic essential oils at home: a beginner's guide</h2>
-          <span class="date">June 1, 2026</span>
+          <p class="excerpt">A simple, safe starting point — diffusing, dilution ratios, reed diffusers and everyday rituals.</p>
+          <time class="date" datetime="2026-06-01">June 1, 2026</time>
         </div>
       </a>
 
       <a class="post" href="news-caring-for-makeup-brushes.html">
-        <div class="thumb" style="background-image:url('images/banner-makeup-brushes.webp')"></div>
+        <img class="thumb" src="images/banner-makeup-brushes.webp" alt="Collection of handcrafted Japanese makeup brushes with lacquered handles and natural bristles" width="2000" height="850" loading="lazy" />
         <div class="body">
           <span class="cat">Beauty Tools</span>
           <h2>Caring for handcrafted Japanese makeup brushes</h2>
-          <span class="date">May 20, 2026</span>
+          <p class="excerpt">How to wash, dry and store natural-bristle brushes so they keep their shape and last for years.</p>
+          <time class="date" datetime="2026-05-20">May 20, 2026</time>
         </div>
       </a>
 
       <a class="post" href="news-nmn-placenta-royal-jelly-explained.html">
-        <div class="thumb" style="background-image:url('images/banner-supplements.webp')"></div>
+        <img class="thumb" src="images/banner-supplements.webp" alt="Neoi dietary supplements — Omega III, Royal Jelly, PCN placenta and NMN — with JAB, ISO 9001 and GMP certifications" width="2000" height="850" loading="lazy" />
         <div class="body">
           <span class="cat">Wellness</span>
           <h2>Understanding NMN, placenta &amp; royal jelly: what the labels mean</h2>
-          <span class="date">May 8, 2026</span>
+          <p class="excerpt">A plain-English explainer of three premium ingredients — and what the figures on the label actually mean.</p>
+          <time class="date" datetime="2026-05-08">May 8, 2026</time>
         </div>
       </a>
 
