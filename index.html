@@ -140,6 +140,9 @@
   .brand{display:flex;align-items:center;gap:11px}
   .brand .logo{display:block;flex-shrink:0}
   .brand-name{font-size:26px;letter-spacing:.18em;font-weight:600}
+  .made-badge{display:inline-flex;align-items:center;gap:6px;margin-left:14px;margin-right:auto;padding-left:14px;border-left:1px solid var(--line);font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+  .made-badge .jp-dot{width:8px;height:8px;border-radius:50%;background:#bc002d;flex-shrink:0}
+  @media(max-width:480px){.made-badge{display:none}}
   .nav ul{display:flex;gap:30px;list-style:none;font-family:system-ui,sans-serif;font-size:14px;letter-spacing:.04em}
   .nav a{color:var(--muted);transition:color .2s}
   .nav a:hover{color:var(--ink)}
@@ -227,6 +230,7 @@
       <img class="logo" src="images/neoi-logo.png" width="36" height="36" alt="Neoi logo" />
       <span class="brand-name">NEOI</span>
     </a>
+    <span class="made-badge" aria-label="Made in Japan"><span class="jp-dot" aria-hidden="true"></span>Made in Japan</span>
     <input type="checkbox" id="navtoggle" class="nav-toggle" />
     <label for="navtoggle" class="nav-burger" aria-label="Toggle navigation menu"><span></span><span></span><span></span></label>
     <nav><ul>
