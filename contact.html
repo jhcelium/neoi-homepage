@@ -36,8 +36,33 @@
       "addressRegion": "Osaka",
       "postalCode": "547-0012",
       "addressCountry": "JP"
+    },
+    "sameAs": [
+      "https://beauty.neoi.jp/",
+      "https://supplement.neoi.jp/en",
+      "https://instagram.com/neoi.supplement",
+      "https://x.com/neoi_supplement",
+      "https://youtube.com/@neoi_supplement"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "email": "neoi.jp.mail@gmail.com",
+      "areaServed": "JP",
+      "availableLanguage": ["English", "Japanese"]
     }
   }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.neoi.jp/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.neoi.jp/contact.html" }
+  ]
 }
 </script>
 
@@ -76,6 +101,9 @@
   .info p{font-family:system-ui,sans-serif;font-size:15px;color:var(--muted);margin-bottom:18px}
   .info .row{font-family:system-ui,sans-serif;font-size:15px;margin-bottom:14px}
   .info .row b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:3px;font-weight:600}
+  .info a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+  .info a:hover{color:var(--ink)}
+  .req{color:var(--accent)}
   footer{padding:48px 24px;text-align:center;font-family:system-ui,sans-serif;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
   footer .links{margin-bottom:14px;display:flex;gap:22px;justify-content:center;flex-wrap:wrap}
   footer a:hover{color:var(--ink)}
@@ -117,7 +145,7 @@
     <div class="layout">
 
       <!-- Web3Forms contact form -->
-      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
         <input type="hidden" name="access_key" value="f2b81eab-074b-44bf-b247-f184c8c6e77d" />
         <input type="hidden" name="subject" value="New enquiry from Neoi website" />
         <input type="hidden" name="from_name" value="Neoi Website" />
@@ -125,11 +153,11 @@
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
 
         <div class="field">
-          <label for="name">Name</label>
+          <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
           <input id="name" type="text" name="name" required autocomplete="name" />
         </div>
         <div class="field">
-          <label for="email">Email</label>
+          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
           <input id="email" type="email" name="email" required autocomplete="email" />
         </div>
         <div class="field">
@@ -143,17 +171,18 @@
           </select>
         </div>
         <div class="field">
-          <label for="message">Message</label>
+          <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
           <textarea id="message" name="message" required></textarea>
         </div>
         <button class="btn" type="submit">Send message</button>
         <p class="note">We typically reply within 1–2 business days.</p>
-        <p class="result" id="result"></p>
+        <p class="result" id="result" role="status" aria-live="polite"></p>
       </form>
 
       <div class="info">
         <h2>Get in touch</h2>
         <p>Questions about our products, wholesale, or press? Send us a note and our team in Osaka will get back to you.</p>
+        <div class="row"><b>Email</b><a href="mailto:neoi.jp.mail@gmail.com">neoi.jp.mail@gmail.com</a></div>
         <div class="row"><b>Company</b>NEO INSPIRE KABUSHIKI KAISHA</div>
         <div class="row"><b>Address</b>3-17-25 Nagayoshirokutan, Hirano-ku,<br>Osaka-shi, Osaka 547-0012, Japan</div>
       </div>
