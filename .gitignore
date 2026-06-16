@@ -1,0 +1,4 @@
+# Local data pipeline — contains Bright Data API key, never deploy
+faq-pipeline/
+.DS_Store
+.claude/
