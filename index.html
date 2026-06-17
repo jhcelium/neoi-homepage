@@ -17,6 +17,17 @@
 <meta property="og:url" content="https://www.neoi.jp/" />
 <meta property="og:image" content="https://www.neoi.jp/images/banner-aroma-beauty.webp" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="es_ES" />
+
+<!-- hreflang language alternates -->
+<link rel="alternate" hreflang="en" href="https://www.neoi.jp/" />
+<link rel="alternate" hreflang="de" href="https://www.neoi.jp/de/" />
+<link rel="alternate" hreflang="fr" href="https://www.neoi.jp/fr/" />
+<link rel="alternate" hreflang="es" href="https://www.neoi.jp/es/" />
+<link rel="alternate" hreflang="x-default" href="https://www.neoi.jp/" />
 
 <!-- Organization schema (E-E-A-T / GEO trust signal) -->
 <script type="application/ld+json">
@@ -146,6 +157,10 @@
   .nav ul{display:flex;gap:30px;list-style:none;font-family:system-ui,sans-serif;font-size:14px;letter-spacing:.04em}
   .nav a{color:var(--muted);transition:color .2s}
   .nav a:hover{color:var(--ink)}
+  .lang-switch{display:flex;gap:4px;align-items:center;font-family:system-ui,sans-serif;font-size:12px;letter-spacing:.04em;margin-left:22px}
+  .lang-switch a{color:var(--muted);padding:4px 7px;border-radius:6px;transition:color .2s,background .2s}
+  .lang-switch a.active{color:var(--ink);font-weight:600;background:rgba(154,143,125,.15)}
+  @media(max-width:480px){.lang-switch{margin-left:auto;gap:2px}.lang-switch a{padding:4px 5px}}
   .nav-toggle{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;cursor:pointer;padding:9px;margin-right:-9px}.nav-burger span{display:block;height:2px;width:100%;background:var(--ink);border-radius:2px;transition:transform .25s,opacity .25s}.nav-toggle:checked~.nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}.nav-toggle:checked~.nav-burger span:nth-child(2){opacity:0}.nav-toggle:checked~.nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.nav-toggle:focus-visible~.nav-burger{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}@media(max-width:860px){.nav-burger{display:flex}.nav nav{position:absolute;top:100%;left:0;right:0;background:rgba(250,248,244,.98);border-bottom:1px solid var(--line);display:none}.nav-toggle:checked~nav{display:block}.nav nav ul{display:flex;flex-direction:column;gap:0;padding:4px 24px 14px;max-width:1280px;margin:0 auto}.nav nav a{display:block;padding:13px 0;font-size:16px;border-top:1px solid var(--line)}}
 
   .intro{text-align:center;padding:64px 24px 36px}
@@ -242,6 +257,12 @@
       <li><a href="#faq">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul></nav>
+    <div class="lang-switch" aria-label="Language">
+      <a href="/" class="active" aria-current="true">EN</a>
+      <a href="/de/" hreflang="de" lang="de">DE</a>
+      <a href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <a href="/es/" hreflang="es" lang="es">ES</a>
+    </div>
   </div>
 </header>
 
