@@ -96,6 +96,44 @@
   </url>
   <url>
     <loc>https://www.neoi.jp/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neoi.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.neoi.jp/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.neoi.jp/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.neoi.jp/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neoi.jp/contact.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.neoi.jp/de/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neoi.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.neoi.jp/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.neoi.jp/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.neoi.jp/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neoi.jp/contact.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.neoi.jp/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neoi.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.neoi.jp/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.neoi.jp/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.neoi.jp/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neoi.jp/contact.html"/>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.neoi.jp/es/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neoi.jp/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.neoi.jp/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.neoi.jp/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.neoi.jp/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neoi.jp/contact.html"/>
     <lastmod>2026-06-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
